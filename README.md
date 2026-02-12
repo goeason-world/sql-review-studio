@@ -1,4 +1,4 @@
-# SQL Review Studio (Vue + Vite + Go, Frontend-Backend Separation)
+# SQL Review Studio
 
 Language: [中文](#readme-zh) | [English](#readme-en)
 
