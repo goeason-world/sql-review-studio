@@ -12,3 +12,8 @@
 # Generic build outputs
 build/
 dist/
+
+# Local SQLite data files
+data/*.db
+data/*.db-shm
+data/*.db-wal
