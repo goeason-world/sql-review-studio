@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Go build/module caches
+**/.cache/
+**/.gomodcache/
+
+# Go test/build artifacts
+*.test
+*.out
+
+# Generic build outputs
+build/
+dist/
