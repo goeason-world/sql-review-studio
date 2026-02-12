@@ -1,11 +1,9 @@
-2026/02/12 09:33:59 SQL Review API running on http://localhost:8080
-2026/02/12 09:33:59 GET /api/v1/health
-2026/02/12 09:34:15 GET /api/v1/rules
-2026/02/12 09:34:16 GET /api/v1/history
-2026/02/12 09:34:29 OPTIONS /api/v1/history
-2026/02/12 09:34:29 DELETE /api/v1/history
-2026/02/12 09:34:29 GET /api/v1/history
-2026/02/12 09:34:35 OPTIONS /api/v1/history
-2026/02/12 09:34:35 DELETE /api/v1/history
-2026/02/12 09:34:35 GET /api/v1/history
-2026/02/12 09:34:39 GET /api/v1/history
+2026/02/12 09:51:28 SQL Review API running on http://localhost:8080
+2026/02/12 09:51:29 GET /api/v1/health
+2026/02/12 09:51:30 GET /api/v1/rules
+2026/02/12 09:51:30 GET /api/v1/history
+2026/02/12 09:51:44 GET /api/v1/rules
+2026/02/12 09:51:44 GET /api/v1/history
+2026/02/12 09:51:51 GET /api/v1/rules
+2026/02/12 09:51:51 GET /api/v1/history
+2026/02/12 09:53:33 GET /api/v1/history

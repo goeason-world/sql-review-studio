@@ -1063,11 +1063,17 @@ onMounted(async () => {
           <h3>规则配置</h3>
           <span class="meta">当前：{{ activeRuleConfigName }}</span>
         </div>
+        <p class="meta config-caption">引擎：{{ engineText(selectedEngine) }} · 已保存 {{ configNames.length }} 套配置</p>
 
         <div class="config-form">
-          <label>配置名称</label>
-          <input v-model.trim="configNameInput" class="config-input" placeholder="例如：prod-safe / qa-loose" />
-          <div class="row">
+          <label for="rule-config-name">配置名称</label>
+          <input
+            id="rule-config-name"
+            v-model.trim="configNameInput"
+            class="config-input"
+            placeholder="例如：prod-safe / qa-loose"
+          />
+          <div class="row config-actions">
             <button class="btn primary" @click="saveCurrentRuleConfig">保存当前开关</button>
             <button class="btn" @click="loadSelectedRuleConfig">加载配置</button>
             <button class="btn" @click="deleteSelectedRuleConfig">删除配置</button>
@@ -1095,8 +1101,10 @@ onMounted(async () => {
           <span v-if="rulesVersion" class="meta">版本：{{ rulesVersion }}</span>
         </div>
         <div class="rule-toolbar">
-          <div class="row-inline">
+          <div class="row-inline rule-count">
             <span>启用 {{ enabledRuleCount }} / {{ rules.length }}</span>
+          </div>
+          <div class="row-inline rule-batch-actions">
             <button class="text-btn" @click="enableAllRules">全选</button>
             <button class="text-btn" @click="disableAllRules">全关</button>
           </div>

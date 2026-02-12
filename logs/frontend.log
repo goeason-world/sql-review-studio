@@ -2,9 +2,8 @@
 > sql-review-frontend@1.0.0 dev
 > vite --host 0.0.0.0 --port 5173
 
-Re-optimizing dependencies because vite config has changed
 
-  VITE v5.4.21  ready in 343 ms
+  VITE v5.4.21  ready in 335 ms
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://192.168.152.236:5173/
