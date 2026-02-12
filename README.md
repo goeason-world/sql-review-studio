@@ -8,6 +8,15 @@ Language: [中文](#readme-zh) | [English](#readme-en)
 ### 项目简介
 这是一个工程化的 SQL 审查平台。
 
+### 这个产品能做什么
+
+- 在发布前快速审查 SQL 脚本，提前发现高风险语句
+- 同时支持 `MySQL / PostgreSQL / MongoDB` 三类脚本检查
+- 支持两种输入方式：直接粘贴 SQL、上传脚本文件
+- 输出结构化审查结果：错误/警告/提示 + 修复建议
+- 自动保存每次审查历史，可回看详情并恢复到工作区继续分析
+- 支持按引擎管理规则：开启/关闭、保存配置、加载配置
+
 - 前端：`Vue 3 + Vite`
 - 后端：`Go API + SQLite`（基于本机 `sqlite3` 命令）
 - 支持：上传 SQL、粘贴 SQL、规则配置（保存/加载）、历史持久化、多菜单界面
@@ -163,6 +172,15 @@ npm run preview
 
 ### Overview
 This is a production-style SQL review platform.
+
+### What This Product Does
+
+- Reviews SQL scripts before release and flags risky statements early
+- Supports checks for `MySQL / PostgreSQL / MongoDB`
+- Accepts both direct SQL paste and script file upload
+- Returns structured results: error/warning/info plus remediation advice
+- Persists every review as history, with detail view and restore-to-workspace
+- Supports engine-specific rule management: enable/disable, save, and load configs
 
 - Frontend: `Vue 3 + Vite`
 - Backend: `Go API + SQLite` (based on local `sqlite3` command)
