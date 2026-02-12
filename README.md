@@ -1,5 +1,8 @@
 # SQL Review Studio (Vue + Vite + Go, Frontend-Backend Separation)
 
+Language: [中文](#readme-zh) | [English](#readme-en)
+
+<a id="readme-zh"></a>
 ## 中文
 
 ### 项目简介
@@ -155,6 +158,7 @@ npm run build
 npm run preview
 ```
 
+<a id="readme-en"></a>
 ## English
 
 ### Overview
