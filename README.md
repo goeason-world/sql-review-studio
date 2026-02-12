@@ -5,22 +5,28 @@ Language: [中文](#readme-zh) | [English](#readme-en)
 <a id="readme-zh"></a>
 ## 中文
 
-### 项目简介
-这是一个工程化的 SQL 审查平台。
+### 产品定位
+SQL Review Studio 是一个面向研发、DBA 和数据团队的 SQL 审查平台，用于在发布前识别风险、给出修复建议，并沉淀可追溯的审查记录。
 
-### 这个产品能做什么
+### 产品设计初衷
 
-- 在发布前快速审查 SQL 脚本，提前发现高风险语句
-- 同时支持 `MySQL / PostgreSQL / MongoDB` 三类脚本检查
-- 支持两种输入方式：直接粘贴 SQL、上传脚本文件
-- 输出结构化审查结果：错误/警告/提示 + 修复建议
-- 自动保存每次审查历史，可回看详情并恢复到工作区继续分析
-- 支持按引擎管理规则：开启/关闭、保存配置、加载配置
+- 降低数据库变更事故：将高风险语句在上线前暴露并提示修复方向
+- 统一多引擎审查入口：以一致的流程支持 `MySQL / PostgreSQL / MongoDB`
+- 标准化审查流程：支持规则配置、历史留痕、问题复盘，减少人治差异
+
+### 核心能力
+
+- SQL 输入方式：支持直接粘贴与脚本文件上传
+- 规则引擎：按引擎隔离规则，支持开启/关闭、保存/加载配置
+- 结果输出：提供错误/警告/提示分级与可执行修复建议
+- 历史管理：持久化每次审查记录，支持分页、详情、删除、恢复到工作区
+
+### 技术栈
 
 - 前端：`Vue 3 + Vite`
-- 后端：`Go API + SQLite`（基于本机 `sqlite3` 命令）
-- 支持：上传 SQL、粘贴 SQL、规则配置（保存/加载）、历史持久化、多菜单界面
-- 支持：`MySQL / PostgreSQL / MongoDB` 多引擎规则集（按引擎隔离）
+- 后端：`Go`（HTTP API）
+- 存储：`SQLite`（通过本机 `sqlite3` 命令访问）
+- 工程化：`dev.sh` 统一管理前后端启动、健康检查、日志与清理
 
 ### 目录结构
 
@@ -170,22 +176,28 @@ npm run preview
 <a id="readme-en"></a>
 ## English
 
-### Overview
-This is a production-style SQL review platform.
+### Product Positioning
+SQL Review Studio is a SQL review platform for engineering, DBA, and data teams. It helps identify release risks before execution, provides remediation guidance, and keeps auditable review records.
 
-### What This Product Does
+### Design Intent
 
-- Reviews SQL scripts before release and flags risky statements early
-- Supports checks for `MySQL / PostgreSQL / MongoDB`
-- Accepts both direct SQL paste and script file upload
-- Returns structured results: error/warning/info plus remediation advice
-- Persists every review as history, with detail view and restore-to-workspace
-- Supports engine-specific rule management: enable/disable, save, and load configs
+- Reduce database change incidents by catching risky statements before release
+- Unify multi-engine review with one workflow across `MySQL / PostgreSQL / MongoDB`
+- Standardize review operations with configurable rules and traceable history
+
+### Core Capabilities
+
+- Input: direct SQL paste and script file upload
+- Rules: engine-isolated rule sets with enable/disable and save/load config support
+- Output: structured error/warning/info findings with actionable suggestions
+- History: persistent records with list/detail/delete and restore-to-workspace flow
+
+### Tech Stack
 
 - Frontend: `Vue 3 + Vite`
-- Backend: `Go API + SQLite` (based on local `sqlite3` command)
-- Features: SQL file upload, SQL paste, rule configuration (save/load), persistent history, multi-menu UI
-- Engines: `MySQL / PostgreSQL / MongoDB` with engine-isolated rule sets
+- Backend: `Go` (HTTP API)
+- Storage: `SQLite` (accessed via local `sqlite3` command)
+- Operations: `dev.sh` for startup, health checks, logs, and cleanup
 
 ### Project Structure
 
