@@ -8,3 +8,7 @@
 2026/02/12 09:51:51 GET /api/v1/history
 2026/02/12 09:53:33 GET /api/v1/history
 2026/02/12 09:59:47 GET /api/v1/history
+2026/02/12 10:45:25 GET /api/v1/rules
+2026/02/12 10:45:25 GET /api/v1/history
+2026/02/12 12:01:42 GET /api/v1/rules
+2026/02/12 12:01:42 GET /api/v1/history
